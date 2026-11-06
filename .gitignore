@@ -1,0 +1,41 @@
+# ---------------------------------------------------------------
+#  KiCad 10 - file locali / rigenerabili
+# ---------------------------------------------------------------
+# stato locale dell'editor (contiene percorsi e preferenze della macchina)
+*.kicad_prl
+*.kicad_pro.lock
+*.lck
+
+# backup e autosave
+*.bak
+*-bak
+*.kicad_sch-bak
+_autosave-*
+fp-info-cache
+
+# cache e output rigenerabili
+output/
+jlcpcb/gerber/
+jlcpcb/project.db
+*.rpt
+*.net
+
+# ---------------------------------------------------------------
+#  Electra - artefatti di sessione (restano solo .do e .dsn)
+# ---------------------------------------------------------------
+Electra/*.ses
+Electra/*.log
+Electra/*.rte
+Electra/*.rts
+Electra/*.rtr
+Electra/*.region
+Electra/~*.do
+
+# ---------------------------------------------------------------
+#  Sistema / editor
+# ---------------------------------------------------------------
+.history/
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
