@@ -12851,7 +12851,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C22373924"
+		(property "LCSC" "C19268731"
 			(at 40.64 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -12862,7 +12862,7 @@
 				)
 			)
 		)
-		(property "MPN" "HC-PM254-8.5H-2x19PZ"
+		(property "MPN" "XDM254-2-19-Z-8.5-G0"
 			(at 40.64 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -16058,7 +16058,7 @@
 				)
 			)
 		)
-		(property "Value" "LXW128V-5.08-5P"
+		(property "Value" "WJ2EDGVC-5.08-05P-14-00A"
 			(at 76.454 121.666 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16101,7 +16101,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C53447002"
+		(property "LCSC" "C8423"
 			(at 80.01 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -16112,7 +16112,18 @@
 				)
 			)
 		)
-		(property "MPN" "LXW128V-5.08-5P"
+		(property "MPN" "WJ2EDGVC-5.08-05P-14-00A"
+			(at 80.01 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Accessori" "WJ2EDGK-5.08-05P-14-00A (C71373)"
 			(at 80.01 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -20050,6 +20061,17 @@
 				)
 			)
 		)
+		(property "Accessori" "A2004H-8P (C339115) + 8x A2004-TP (C339118)"
+			(at 85.09 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "LCSC" "C225246"
 			(at 85.09 29.21 0)
 			(hide yes)
@@ -21106,7 +21128,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C22373924"
+		(property "LCSC" "C19268731"
 			(at 40.64 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -21117,7 +21139,7 @@
 				)
 			)
 		)
-		(property "MPN" "HC-PM254-8.5H-2x19PZ"
+		(property "MPN" "XDM254-2-19-Z-8.5-G0"
 			(at 40.64 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -22394,7 +22416,7 @@
 				)
 			)
 		)
-		(property "Ruolo" "ingresso 12V"
+		(property "Ruolo" "ingresso 12V - footprint Phoenix PT-1,5; montato DB125 (passo 3,5 e foro 1,2 identici)"
 			(at 80.01 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -22681,7 +22703,7 @@
 				)
 			)
 		)
-		(property "Value" "ZX-IDC2.54-2-10PZZ"
+		(property "Value" "X9555WV-2x10-6TV01"
 			(at 101.346 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -22724,7 +22746,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C7501245"
+		(property "LCSC" "C2884550"
 			(at 93.98 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -22735,7 +22757,18 @@
 				)
 			)
 		)
-		(property "MPN" "ZX-IDC2.54-2-10PZZ"
+		(property "MPN" "X9555WV-2x10-6TV01"
+			(at -17.78 -5.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Accessori" "X9555H-2x10E-PT (C4748884) + 20x X9555T-PSN-B2 (C2764565)"
 			(at -17.78 -5.08 0)
 			(hide yes)
 			(show_name no)
