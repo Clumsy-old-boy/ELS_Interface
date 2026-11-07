@@ -147,7 +147,7 @@ the buck, which keeps that pin inside the 4.75–5.25 V range specified by ST
 | Configuration (PDF) | [`docs/CONFIGURATION.pdf`](docs/CONFIGURATION.pdf) | Printable hardware configuration, 8 pages |
 | Test procedure (PDF) | [`docs/TEST_PROCEDURE.pdf`](docs/TEST_PROCEDURE.pdf) | Printable bench checklist, 11 pages |
 | Schematic | [`docs/ELS_Interface_schematics.pdf`](docs/ELS_Interface_schematics.pdf) | Full schematic, single A4 sheet, with title block and revision |
-| PCB layout | `docs/pcb.pdf` | Top / bottom views with reference designators *(to be added)* |
+| PCB layout | [`docs/pcb.pdf`](docs/pcb.pdf) | Top view with all **55** reference designators and bottom view with the two morpho sockets (J1/J2) — 2 pages |
 | Interactive BOM | [`docs/ELS_Interface_ibom.html`](docs/ELS_Interface_ibom.html) | Interactive assembly drawing (iBOM), generated with InteractiveHtmlBom |
 | 3D render | [`docs/ELS_Interface_board.png`](docs/ELS_Interface_board.png) | Top 3D view of the assembled board, transparent background |
 
