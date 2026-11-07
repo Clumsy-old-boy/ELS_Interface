@@ -270,7 +270,7 @@ MCP server (KiCad 10.0.6) and with `kicad-cli`:
 | Check | Result |
 |---|---|
 | ERC — electrical rules check of the schematic | **0 violations** |
-| DRC — design rules check of the PCB | **0 active violations**, **0 unconnected items** |
+| DRC — design rules check of the PCB | **0 active violations**, **0 unconnected items**, **3 excluded findings** (Local override) |
 | Netlist | exported correctly, **56 components** |
 | Schematic / PCB parity | **56 = 56**, no missing component |
 | 3D models | **56 of 56** resolved |

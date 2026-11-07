@@ -73,10 +73,9 @@ cable.
 The memory is an **M24M01E** of 1 Mbit: it keeps its data when the board is
 powered off (for example machine parameters or positions).
 
-> **Open point:** on the schematic the memory is wired to **PC8** and **PC11**.
-> Before using the bus, confirm that the microcontroller I2C peripheral can be
-> routed to this pin pair; otherwise the bus has to be driven as two ordinary
-> digital lines.
+> **Confirmed:** the **PC8/PC11** pair is the microcontroller **I2C3** —
+> PC8 = `I2C3_SCL`, PC11 = `I2C3_SDA` (alternate function table of the STM32G474
+> datasheet). The bus is therefore used as hardware I2C, with no bit-banging.
 
 ### 2.4 Encoders
 
@@ -100,7 +99,7 @@ shifter **U2**.
 | BTN_JOG_MINUS | **PA15** | J5-16 | internal pull-up | **active low** |
 | BTN_MODE | **PB12** | J5-14 | internal pull-up | **active low** |
 | BTN_RESET | **PB10** | J5-13 | internal pull-up | **active low** |
-| **EMERGENCY** | **PB7** | J5-11 | **R15 = 47 kOhm** to 3.3 V | **active low** |
+| **EMERGENCY** | **PB7** | J5-11 | **R3 = 1 kOhm** in series + **C7 = 100 nF** to GND (RC filter, ~100 us) | **active low** |
 
 **What "active low" means:** at rest the pin sits at 3.3 V; when you press the
 button the pin drops to 0 V. A button wired to ground is therefore normal.
@@ -150,7 +149,7 @@ The master table, to use when you need to find "where this signal ends up".
 | Spindle encoder A | **PC0** | — | J5-3 | 3.3 V |
 | Spindle encoder B | **PC1** | U2 (A3→B3) | J5-4 | 3.3 → 4.6 V |
 | Auxiliary signal | **PC4** | — | J5-5 | 3.3 V |
-| Emergency | **PB7** | R15 47 kOhm | J5-11 | 3.3 V, active low |
+| Emergency | **PB7** | R3 1 kOhm in series + C7 100 nF | J5-11 | 3.3 V, active low |
 | Reset button | **PB10** | internal pull-up | J5-13 | active low |
 | Mode button | **PB12** | internal pull-up | J5-14 | active low |
 | Jog + button | **PB14** | internal pull-up | J5-15 | active low |
@@ -158,7 +157,7 @@ The master table, to use when you need to find "where this signal ends up".
 | Isolated output 1 | via U3 | R12 220 Ohm, PC817 | J8-1 | open collector |
 | Isolated output 2 | via U4 | R13 220 Ohm, PC817 | J8-2 | open collector |
 | Isolated output 3 | via U5 | R14 220 Ohm, PC817 | J8-3 | open collector |
-| Direct output | **PC9** | — | J8-4 | 3.3 V |
+| Direct output | **PC9** | R15 4.7 kOhm (pull-up) | J8-4 | 3.3 V |
 | +3.3 V | — | R16, R17, C13, C14 | J1-12, J1-16 | 3.3 V |
 
 ---
@@ -200,7 +199,8 @@ Its main pins:
 | **N2** | **D4 and D5 are in SOD-123** packages (pads 0.9 x 1.2 mm). A SOD-123FL part does not fit: it is not a compatible substitute |
 | **N3** | The thermal vias under **U1** have a 0.150 mm annular ring, against the 0.180 mm recommended by JLCPCB for manufacturing. They are still above the 0.130 mm absolute minimum, but they are the most critical point of the board |
 | **N4** | The **V_5V_SHIELD** rail always sits between 4.4 and 4.7 V because of the diode drop: devices connected to J5 must accept this voltage |
-| **N5** | The **PC8/PC11** I2C pair is the only design point still to be confirmed (see §2.3) |
+| **N5** | The **PC8/PC11** pair is **confirmed as I2C3**: PC8 = `I2C3_SCL`, PC11 = `I2C3_SDA` (alternate function table of the STM32G474 datasheet). **PB7** (emergency) is also an I2C pin (`I2C1_SDA`, `I2C4_SDA`) and must stay configured as GPIO |
+| **N6** | **3 excluded DRC findings** (project-level *Local override*): 1 **error** `footprint_type_mismatch` on **U1** (footprint declares through-hole but its pads are SMD) and 2 **warnings** `lib_footprint_mismatch` on **F1** and **U1** (locally modified footprint differs from the library copy). They are intentional and reviewed: they do not block manufacturing |
 
 ---
 
@@ -212,7 +212,7 @@ server (KiCad 10.0.6) and with `kicad-cli`:
 | Check | Result |
 |---|---|
 | ERC — electrical rules check of the schematic | **0 violations** |
-| DRC — design rules check of the PCB | **0 active violations**, **0 unconnected items** |
+| DRC — design rules check of the PCB | **0 active violations**, **0 unconnected items**, **3 excluded findings** (note **N6**) |
 | Netlist | exported correctly, **56 components** |
 | Schematic / PCB parity | **56 = 56**, no missing component |
 | 3D models | **56 of 56** resolved |
