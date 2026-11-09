@@ -1,0 +1,456 @@
+(footprint "TI_SO-PowerPAD-8_ThermalVias_JLCPCB"
+	(version 20260206)
+	(generator "dsh-agent-from-pcb")
+		(layer "F.Cu")
+		
+		
+		(descr "8-pin HTSOP package with 1.27mm pin pitch, compatible with SOIC-8, 3.9x4.9mm² body, exposed pad, thermal vias with large copper area, as proposed in http://www.ti.com/lit/ds/symlink/tps5430.pdf")
+		(tags "HTSOP 1.27")
+		(property "Reference" "REF**"
+			(at -4.9 -2.525 90)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "e0eb6077-5329-4ab6-a524-554b1898987f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "TI_SO-PowerPAD-8_ThermalVias_JLCPCB"
+			(at 0 3.5 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "66f014c7-b938-4da9-9dc6-277bbada3641")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps5430.pdf"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1086180f-e8fc-4743-8869-430bab64c561")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "3A, Step Down Swift Converter, Adjustable Output Voltage, 5.5-36V Input Voltage, PowerSO-8"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "493b7002-38e0-4e47-92bc-66db62884da8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C9864"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "757f42aa-a42d-487e-8a3f-62f493da0b83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Ruolo" "buck 5V/3A"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a73565e-5173-4552-b407-35fbc56c6da6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCST" "C9864"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "09252fb8-bae5-4e16-9ed3-1ec38caabe5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "TPS5430DDAR"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "39c2f1dc-aa87-4321-ab6f-a0285348cf3f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "TI*SO*PowerPAD*ThermalVias*")
+		(path "/8a7c4575-67f3-486a-83ac-b550a2eb1b51")
+		(sheetname "/")
+		(sheetfile "ELS_Interface.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "7" "5" "2" "3" "6" "9" "1" "8" "4")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -2.075 -2.575)
+			(end 2.075 -2.575)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "20879774-160c-4d88-95df-0334c167a795")
+		)
+		(fp_line
+			(start -2.075 2.575)
+			(end 2.075 2.575)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d82b57ca-c162-410c-8ee9-1fbe3b994eb0")
+		)
+		(fp_poly
+			(pts
+				(xy -2.5 -2.5) (xy -2.74 -2.83) (xy -2.26 -2.83) (xy -2.5 -2.5)
+			)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill yes)
+			(layer "F.SilkS")
+			(uuid "59bfdb8c-5121-4b80-bb92-8889fb5c443a")
+		)
+		(fp_line
+			(start 3.75 -2.75)
+			(end 3.75 2.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "658f9e60-55e7-4d6f-b9ff-a2371905be4e")
+		)
+		(fp_line
+			(start -3.75 -2.75)
+			(end 3.75 -2.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "36157b0e-1c24-4eab-b6a2-29ccc9a77590")
+		)
+		(fp_line
+			(start -3.75 -2.75)
+			(end -3.75 2.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5b84676e-8dc1-4ddb-99ce-852c546c0265")
+		)
+		(fp_line
+			(start -3.75 2.75)
+			(end 3.75 2.75)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ca6fce2c-e0f2-44f9-9acd-12c7f92d8f0a")
+		)
+		(fp_line
+			(start 1.95 -2.45)
+			(end 1.95 2.45)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fd835e02-5129-4f8c-8adb-9741420b6488")
+		)
+		(fp_line
+			(start -0.95 -2.45)
+			(end 1.95 -2.45)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2e4818fe-56a1-44d3-a82a-a580ec5bf38b")
+		)
+		(fp_line
+			(start -1.95 -1.45)
+			(end -0.95 -2.45)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "cff9c283-eec0-4f79-bd19-64da7b2eb604")
+		)
+		(fp_line
+			(start 1.95 2.45)
+			(end -1.95 2.45)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e19ea0eb-7ff6-4c76-a885-87371c2b549b")
+		)
+		(fp_line
+			(start -1.95 2.45)
+			(end -1.95 -1.45)
+			(stroke
+				(width 0.15)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "365d4634-52d0-4991-8f25-32fc93973495")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 90)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "d36e2498-be1f-44d2-bff8-05ad05ce230d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -2.7 -1.905)
+			(size 1.55 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			
+			
+			
+			
+		)
+		(pad "2" smd rect
+			(at -2.7 -0.635)
+			(size 1.55 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			
+			
+			
+			
+		)
+		(pad "3" smd rect
+			(at -2.7 0.635)
+			(size 1.55 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			
+			
+			
+			
+		)
+		(pad "4" smd rect
+			(at -2.7 1.905)
+			(size 1.55 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			
+			
+			
+			
+		)
+		(pad "5" smd rect
+			(at 2.7 1.905)
+			(size 1.55 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			
+			
+			
+			
+		)
+		(pad "6" smd rect
+			(at 2.7 0.635)
+			(size 1.55 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			
+			
+			
+			
+		)
+		(pad "7" smd rect
+			(at 2.7 -0.635)
+			(size 1.55 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			
+			
+			
+			
+		)
+		(pad "8" smd rect
+			(at 2.7 -1.905)
+			(size 1.55 0.6)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			
+			
+			
+			
+		)
+		(pad "9" thru_hole circle
+			(at -0.6 -1.8)
+			(size 0.66 0.66)
+			(drill 0.3)
+			(layers "*.Cu")
+			(remove_unused_layers no)
+			
+			
+			
+			
+		)
+		(pad "9" thru_hole circle
+			(at -0.6 -0.6)
+			(size 0.66 0.66)
+			(drill 0.3)
+			(layers "*.Cu")
+			(remove_unused_layers no)
+			
+			
+			
+			
+		)
+		(pad "9" thru_hole circle
+			(at -0.6 0.7)
+			(size 0.66 0.66)
+			(drill 0.3)
+			(layers "*.Cu")
+			(remove_unused_layers no)
+			
+			
+			
+			
+		)
+		(pad "9" thru_hole circle
+			(at -0.6 1.8)
+			(size 0.66 0.66)
+			(drill 0.3)
+			(layers "*.Cu")
+			(remove_unused_layers no)
+			
+			
+			
+			
+		)
+		(pad "9" smd rect
+			(at 0 0)
+			(size 2.6 3.1)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			
+			
+			
+			
+		)
+		(pad "9" smd rect
+			(at 0 0)
+			(size 2.95 4.5)
+			(layers "F.Cu")
+			
+			
+			
+			
+		)
+		(pad "9" smd rect
+			(at 0 0)
+			(size 2.95 4.5)
+			(layers "B.Cu")
+			
+			
+			
+			
+		)
+		(pad "9" thru_hole circle
+			(at 0.6 -1.8)
+			(size 0.66 0.66)
+			(drill 0.3)
+			(layers "*.Cu")
+			(remove_unused_layers no)
+			
+			
+			
+			
+		)
+		(pad "9" thru_hole circle
+			(at 0.6 -0.6)
+			(size 0.66 0.66)
+			(drill 0.3)
+			(layers "*.Cu")
+			(remove_unused_layers no)
+			
+			
+			
+			
+		)
+		(pad "9" thru_hole circle
+			(at 0.6 0.7)
+			(size 0.66 0.66)
+			(drill 0.3)
+			(layers "*.Cu")
+			(remove_unused_layers no)
+			
+			
+			
+			
+		)
+		(pad "9" thru_hole circle
+			(at 0.6 1.8)
+			(size 0.66 0.66)
+			(drill 0.3)
+			(layers "*.Cu")
+			(remove_unused_layers no)
+			
+			
+			
+			
+		)
+		(embedded_fonts no)
+		(model "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/HTSOP-8-1EP_3.9x4.9mm_P1.27mm.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)

@@ -1,0 +1,215 @@
+(footprint "Fuse_1812_4532Metric_JLCPCB"
+	(version 20260206)
+	(generator "dsh-agent-from-pcb")
+		(layer "F.Cu")
+		
+		
+		(descr "Fuse SMD 1812 (4532 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: https://www.nikhef.nl/pub/departments/mt/projects/detectorR_D/dtddice/ERJ2G.pdf)")
+		(tags "fuse")
+		(property "Reference" "REF**"
+			(at 0 -3 180)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "0899e54c-1be0-4a33-9b61-2ebba0fa9f6c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "Fuse_1812_4532Metric_JLCPCB"
+			(at 0 2.65 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "c8031681-3ce0-446f-aaba-94c4ee4c9e6f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "83248a48-3930-4f22-aba1-c966c30da3d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resettable fuse, polymeric positive temperature coefficient"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "458383ae-b5d3-47e6-bc4e-90c3b4577160")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "KiLib_Generator" "SMD_2terminal_chip_molded"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "75fcdf2c-e49b-4f32-9127-511a0bdc5578")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCSC" "C210834"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f78bf7ce-9601-4709-b66a-f8c65aa271cc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Ruolo" "polyfuse 1.1A"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "76af0a8b-676c-4390-a233-cd87c8707afa")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "LCST" "C210834"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f6e35e4f-b6f2-4bc0-911b-c5b9a8e128a2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "MPN" "MF-MSMF110/16-2"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cb2743c1-8c42-4810-bbcf-50ea68d70cef")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "*polyfuse* *PTC*")
+		(path "/acd29819-045b-4a61-b3ba-b8594bb07b86")
+		(sheetname "/")
+		(sheetfile "ELS_Interface.kicad_sch")
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr smd)
+		(duplicate_pad_numbers_are_jumpers no)
+		(fp_line
+			(start -1.3 1.71)
+			(end 1.3 1.71)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8458fecf-0acc-4671-b560-556f8e20efd0")
+		)
+		(fp_line
+			(start -1.3 -1.71)
+			(end 1.3 -1.71)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "01ee6764-7d91-4d18-8678-64b059df7870")
+		)
+		(fp_rect
+			(start -2.95 -1.95)
+			(end 2.95 1.95)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "0be683e5-164b-4819-bb0c-3e9a5261d791")
+		)
+		(fp_rect
+			(start -2.25 -1.6)
+			(end 2.25 1.6)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "7b173c1a-4f8f-4b74-9803-877aa3d822c2")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 -1 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "3f12225f-dc42-41aa-be81-d7ad697e2a3f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" smd roundrect
+			(at -2.1375 0)
+			(size 1.3 3.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.222222)
+			
+			
+			
+		)
+		(pad "2" smd roundrect
+			(at 2.1375 0)
+			(size 1.3 3.4)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(roundrect_rratio 0.222222)
+			
+			
+			
+		)
+		(embedded_fonts no)
+		(model "${KIPRJMOD}/library/3d/MF-MSMF110_16-2.STEP"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 -0 -0)
+			)
+		)
+	)
