@@ -224,7 +224,7 @@
 		(uuid "b9e2a919-af7f-4278-b609-958474e8e343")
 	)
 	(embedded_fonts no)
-	(model "D:/Documenti/KiCad/10.0/3dmodels/WJ2EDGVC-5.08-5P.stp"
+	(model "${KIPRJMOD}/library/3d/WJ2EDGVC-5.08-5P.stp"
 		(offset
 			(xyz 0 0 0)
 		)

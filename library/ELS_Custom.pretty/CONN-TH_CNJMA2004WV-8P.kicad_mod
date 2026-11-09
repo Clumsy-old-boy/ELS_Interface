@@ -290,7 +290,7 @@
 		(uuid "de89056c-aefa-456f-b008-ab4375dded77")
 	)
 	(embedded_fonts no)
-	(model "D:/Documenti/KiCad/10.0/3dmodels/53014-0810.stp"
+	(model "${KIPRJMOD}/library/3d/53014-0810.stp"
 		(offset
 			(xyz -6.5 -0.5 3)
 		)
